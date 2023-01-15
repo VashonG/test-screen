@@ -1,0 +1,480 @@
+* {
+  display: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title-top {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 32px;
+  margin: 0px;
+}
+.title-bottom {
+  font-size: 3.5rem;
+  letter-spacing: 40px;
+  margin: 0;
+}
+.title-bottom:before,
+.title-bottom:after {
+  display: none;
+}
+.title-hgroup {
+  margin: 0 auto;
+  width: 630px;
+  border-top: 8px solid;
+  text-align: center;
+  border-bottom: 2px solid;
+  padding: 2rem 0 2rem 0.5rem;
+}
+
+img {
+  display: block;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+body {
+  font-family: Roboto, "IBM Plex Sans", sans-serif;
+  /*   font-style: italic; */
+  /*   font-weight: 400; */
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  color: rgba(0, 0, 0, 1);
+}
+
+.screen {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #e5e5e5 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    #e5e5e5 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #e5e5e5 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#ffffff",
+      endColorstr="#e5e5e5",
+      GradientType=0
+    ); /* IE6-9 */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4.4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+h1:before {
+  width: 100px;
+  content: "";
+  display: block;
+  height: 8px;
+  background: rgba(0, 0, 0, 1);
+}
+h1:after {
+  width: 200px;
+  content: "";
+  display: block;
+  height: 2px;
+  background: rgba(0, 0, 0, 1);
+  margin-bottom: 2rem;
+}
+
+h4,
+.label {
+  line-height: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+h2.centered {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 220px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+ul {
+  list-style: none;
+  margin: 1.5rem 2rem;
+}
+
+li {
+  /* https://codepen.io/mtclmn/pen/OPQmbx */
+  position: relative;
+}
+li:after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background: rgba(0, 0, 0, 1);
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0.5rem;
+  left: -1rem;
+}
+
+.screen {
+  height: 100vh;
+  width: 100vw;
+  padding: 7rem 3rem 3rem;
+  background: url(http://i.imgur.com/dwhDge7.jpg);
+  background-size: cover;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+    background-color: #ff0052;
+    background: -webkit-linear-gradient(right, #ff0052, #8e2b88);
+    background: -o-linear-gradient(right, #ff0052, #8e2b88);
+    background: -moz-linear-gradient(right, #ff0052, #8e2b88);
+    background: linear-gradient(right, #ff0052, #8e2b88);
+  opacity: 0.9;
+  height: 4rem;
+  position: absolute;
+}
+.character-header {
+/*   display: inline-block; */
+  color: white;
+/*   width: 300px; */
+  padding-left: 2rem;
+}
+.character-header .character-name {
+  margin: 0;
+  line-height: 1rem;
+  letter-spacing: 2px;
+}
+.character-header .character-name:before {
+  height: 0px;
+  width: 10px;
+/*   margin-bottom: 0.5rem; */
+/*   background: white; */
+}
+.character-header .character-name:after {
+  height: 0;
+  margin: 0;
+}
+.character-header .character-level {
+  margin: -0.25rem 0 -1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.menu-container {
+  align-content: flex-end;
+}
+
+.main-menu {
+  position: relative;
+  top: -2.1rem;
+}
+.main-menu li:after {
+  display: none;
+}
+.main-menu li {
+  display: inline-block;
+  color: white;
+  padding: 1rem 0.5rem;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.main-menu li.active,
+.main-menu li:active,
+.main-menu li:focus,
+.main-menu li:hover {
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+
+.class-selection.screen {
+  display: flex;
+}
+.class-selection article {
+  flex: 1 1 50%;
+}
+
+.class-info {
+  display: none;
+}
+.class-info.active {
+  display: block;
+}
+.class-selection.list {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.class-selection.list li {
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  line-height: 1rem;
+  padding: 1.5rem 1rem;
+  margin: 0.25rem;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  text-align: center;
+}
+.class-selection.list li:after {
+  display: none;
+}
+.class-selection.list li.active,
+.class-selection.list li:active,
+.class-selection.list li:focus,
+.class-selection.list li:hover {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.selected-class-info {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.class-image img {
+  min-height: 80vh;
+}
+.class-name,
+.character-name {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 4px;
+  margin-top: 3rem;
+}
+.class-name:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+}
+.class-attributes {
+  font-weight: 400;
+  margin-top: -0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.class-description {
+  font-style: italic;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.class-ability-title {
+  border: 0;
+  margin-bottom: -0.5rem;
+  letter-spacing: 1px;
+}
+.class-ability-description:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: rgba(0, 0, 0, 1);
+  margin-top: 0.5rem;
+}
+
+.class-info.customize {
+  display: flex;
+}
+.left-column {
+  margin-right: 2rem;
+}
+.customize.list {
+  display: block;
+}
+
+.customize-box {
+  background: rgba(26,28,30,0.9);
+  color: white;
+  padding: 1rem;
+  margin-top: 3.6rem;
+}
+.customize-box hgroup {
+  background: rgba(118, 68, 137, 0.6);
+  padding: 0.2rem 1rem;
+  margin: -1rem -1rem 0.5rem;
+  position: relative;
+}
+.customize-box .character-name {
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.customize-box .character-class {
+  margin-top: -0.7rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  opacity: 0.6;
+  font-weight: 300;
+  border: none;
+}
+.customize-box .character-level {
+  font-weight: 300;
+  opacity: 0.3;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  border: none;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.character-stats-box {
+  line-height: 1.3rem;
+  font-weight: 300;
+  color: rgba(255,255,255, 0.8);
+}
+
+.hp {
+  color: #9a72b6;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.3rem;
+  margin-bottom: -0.7rem;
+}
+.hp span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.8;
+  position: relative;
+  top: -1rem;
+  left: 0.5rem;
+}
+
+.slogan {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5rem;
+}
+
+.character-stats {
+  margin: 1rem;
+}
+
+.character-stats dd {
+  margin-bottom: 0.2rem;
+}
+
+.character-stats .stat-name,
+.character-stats dt {
+  float: left;
+  margin-right: 0.5rem;
+  text-align: right;
+  width: 25%;
+}
+
+.character-stats dd {
+  position: relative;
+}
+
+.stat-abbr {
+  position: absolute;
+  right: 15%;
+  top: 0;
+  opacity: 0.2;
+}
+
+.stat-level {
+  background: rgba(154, 114, 182, 0.6);
+  width: 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  position: relative;
+  top: -2px;
+  left: 5px;
+}
+
+/* Progress Bars */
+progress, progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 18px;
+  width: 60%;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: white;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: rgba(255,255,255,0.1);
+}
+
+progress[value]::-moz-progress-value {
+  background-color: white;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.class-ability-title {
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
